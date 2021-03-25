@@ -1,2 +1,2 @@
-# hebeqe
+# HeBeQe
 Webpage for my streamer buddy
