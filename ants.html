@@ -1,25 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="ants.css">
+  <link rel="stylesheet" href="play.css">
 </head>
 
 <body>
-<div class="bg">
-  <h1 style="color: white;">Welcome to HeBeQe</h1>
-  
-  <ul>
-    <li class="bio"><a href="#about">About</a></li>
-  </ul>
+  <div id="loader"></div>
+  <div class="bg">
+    <h1>Welcome to HeBeQe</h1>  
+    <ul>
+      <li class="bio"><a href="#about">About</a></li>
+    </ul>
 
-  <ul class="this">
-    <li class="this"><a href="https://m.twitch.tv/hebeqe/profile">Twitch</a></li>
-    <li class="this"><a href="https://www.instagram.com/Hebeqeshaun/">Insta</a></li>
-    <li class="this"><a href="https://twitter.com/Hebeqeshaun">Twitter</a></li>
-    <li class="this"><a href="https://www.snapchat.com/add/Snug-thug">Snap</a></li>
-    <li class="this"><a href="https://www.youtube.com/channel/UCTQN9DNb8xywdijiYjof1YA">YouTube</a></li>
-  </ul>
-  
-</div>
+    <ul class="this">
+      <li class="this"><a href="https://m.twitch.tv/hebeqe/profile">Twitch</a></li>
+      <li class="this"><a href="https://www.instagram.com/Hebeqeshaun/">Insta</a></li>
+      <li class="this"><a href="https://twitter.com/Hebeqeshaun">Twitter</a></li>
+      <li class="this"><a href="https://www.snapchat.com/add/Snug-thug">Snap</a></li>
+      <li class="this"><a href="https://www.youtube.com/channel/UCTQN9DNb8xywdijiYjof1YA">YouTube</a></li>
+    </ul>
+    
+    <p>"I luv the game, I luv the hustle" <br> - Paid in Full</p>
+    
+  </div>
+
+<!-- Had to learn JavaScript to implement gif -->
+
+  <script type="text/javascript">
+    var loader;
+
+function loadNow(opacity) {
+    if (opacity <= 0) {
+        displayContent();
+    } else {
+        loader.style.opacity = opacity;
+        window.setTimeout(function() {
+            loadNow(opacity - 0.05);
+        }, 250);
+    }
+}
+
+function displayContent() {
+    loader.style.display = 'none';
+    document.getElementById('content').style.display = 'block';
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    loader = document.getElementById('loader');
+    loadNow(1);
+});
+  </script>
+
 </body>
 </html>
