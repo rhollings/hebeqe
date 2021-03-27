@@ -2,6 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" href="play.css">
+  <script src="script.js"></script>
 </head>
 
 <body>
@@ -23,33 +24,6 @@
     <p>"I luv the game, I luv the hustle" <br> - Paid in Full</p>
     
   </div>
-
-<!-- Had to learn JavaScript to implement gif -->
-
-  <script type="text/javascript">
-    var loader;
-
-function loadNow(opacity) {
-    if (opacity <= 0) {
-        displayContent();
-    } else {
-        loader.style.opacity = opacity;
-        window.setTimeout(function() {
-            loadNow(opacity - 0.05);
-        }, 250);
-    }
-}
-
-function displayContent() {
-    loader.style.display = 'none';
-    document.getElementById('content').style.display = 'block';
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-    loader = document.getElementById('loader');
-    loadNow(1);
-});
-  </script>
 
 </body>
 </html>
