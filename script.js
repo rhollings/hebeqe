@@ -6,8 +6,8 @@ function loadNow(opacity) {
     } else {
         loader.style.opacity = opacity;
         window.setTimeout(function() {
-            loadNow(opacity - 0.10);
-        }, 350);
+            loadNow(opacity - 0.065);
+        }, 335);
     }
 }
 
