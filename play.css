@@ -24,46 +24,52 @@ h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-button {
-    margin-left: 40px;
-}
-
-.tabs {
-    float: left;
-    background-color: black;
-    width: 10%;
-    height: 40px;
-}
-
-.tabs button {
-    display: block;
-    background-color: blue;
+h5 {
     color: white;
-    width: 70%;
-    height: inherit;
-    border: 2px solid rgb(1, 29, 119);
-    border-radius: 15px;
-    outline: none;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 8px 8px 8px 32px;
+    position: absolute;
     text-align: center;
-    cursor: pointer;
 }
 
-.tabs button:hover {
-    background-color: red;
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 
-.tabs button.active {
-    background-color: blue;
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 20px;
+    margin-left: 50px;
 }
 
-.tabcont {
-    float: center;
-    padding: 0px 0px 0px 70px;
-    margin: 0px 0px 0px 100px;
-    width: 35%;
-    border-left: none;
-    height: 10px;
-    display: none;
+#main {
+    transition: margin-left .5s;
+    padding-left: 50px;
+    color: white
 }
 
 p {
@@ -78,11 +84,11 @@ h4 {
 }
 
 .some {
-    padding-top: 50px;
+    padding-top: 3px;
 }
 
 .this {
-    margin: 10px 10px 15px 0px;
+    margin: 5px 10px 15px 0px;
 }
 
 a {
@@ -90,7 +96,7 @@ a {
 }
 
 a:link, a:visited {
-    background-color: ;
+    background-color: #002966;
     color: white;
     border: 2px solid rgb(1, 29, 119);
     border-radius: 15px;
@@ -100,7 +106,24 @@ a:link, a:visited {
     display: inline-block;
 }
   
-  a:hover, a:active {
-    background-color: red;
+a:hover, a:active {
+    background-color: #cc0000;
+    color: white;
+}
+
+span {
+    background-color: #002966;
+    color: white;
+    border: 2px solid rgb(1, 29, 119);
+    border-radius: 15px;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: grab;
+}
+
+span:hover, span:active {
+    background-color: #cc0000;
     color: white;
 }
