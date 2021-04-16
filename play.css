@@ -3,7 +3,7 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100vh;
-    background: url('images/profile.png') no-repeat;
+    background: url('images/One-Piece-Logo.jpeg') no-repeat;
     background-size: cover;
 }
 
@@ -17,11 +17,9 @@ html, body {
      background-size: cover;
 }
 
-@media only screen and (max-device-width: 400px) {
+@media only screen and (min-device-width: 400px) {
     body {
-      background-image: url('images/One-Piece-Logo.jpeg');
-      max-width: 100%;
-      height: auto;
+      background-image: url('images/profile.png');
     }
 }
 
