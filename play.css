@@ -1,135 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
 html, body {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+    background-color: black;
+  }
+
+.bg {
+    background-image: url('images/HBQ\ Intro\ 2_2.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
     width: 100%;
     height: 100vh;
-    background: url('images/One-Piece-Logo.jpeg') no-repeat;
+}
+
+.backg {
+    background-image: url('images/profile.png');
+    background-color: #111;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
-#loaer {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    z-index: 1;
-     overflow: visible;
-     background: black url('images/HBQ\ Intro\ 2_2.gif') center center;
-     background-size: cover;
+.btn {
+    margin-top: 15%;
+    margin-left: 40%;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 70%;
+    font-size: 2em;
+    background: rgb(0, 8, 117);
+    padding: 40px;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    font-family: Teko, sans-serif;
 }
 
-@media only screen and (min-device-width: 400px) {
-    body {
-      background-image: url('images/profile.png');
+.btn:hover {
+    letter-spacing: 3px;
+    transform: scale(1.07);
+}
+
+.text1 {
+    text-align: center;
+    font-family: Teko, sans-serif;
+    font-size: 3rem;
+    width: 25%;
+    color: white;
+    padding-top: 15%;
+    padding-left: 15px;
+    position: relative;
+    line-height: 2.7rem;
+}
+
+.video {
+    padding-left: 65%;
+}
+
+.text2 {
+    text-align: center;
+    font-style: italic;
+    font-family: Teko, sans-serif;
+    font-size: 5rem;
+    width: auto;
+    height: auto;
+    color: white;
+    position: relative;
+}
+
+.text3 {
+    text-align: center;
+    font-size: 2rem;
+    width: auto;
+    height: auto;
+}
+
+.contact-btns {
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+    max-width: 980px;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.contact {
+    font-size: 1.8rem;
+    color: white;
+    padding-left: 15px;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+}
+  
+.contact:hover {
+    transform: translateY(6px);
+}
+
+footer {
+    font-weight: 300;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background: #111;
+    border-top: 4px solid rgb(252, 68, 68);
+    margin-top: 9rem;
+}
+
+
+  
+@media (max-width: 28.75em) {
+    footer {
+      flex-direction: column;
+      text-align: center;
     }
-}
-
-h1 {
-    text-align: right;
-    margin-right: 35px;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-h5 {
-    color: white;
-    font-size: 15px;
-    text-decoration: none;
-    padding: 8px 8px 8px 32px;
-    position: absolute;
-    text-align: center;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    display: block;
-    transition: 0.3s;
-}
-  
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-  
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 20px;
-    margin-left: 50px;
-}
-
-#main {
-    transition: margin-left .5s;
-    padding-left: 50px;
-    color: white
-}
-
-p {
-    text-align: right;
-    margin: 0px 45px 0px 0px;
-    color: rgb(184, 184, 184);
-}
-
-h4 {
-    color: white;
-    font-family: fantasy;
-}
-
-.some {
-    padding-top: 3px;
-}
-
-.this {
-    margin: 5px 10px 15px 0px;
-}
-
-a {
-    color: rgba(255, 255, 255, 0.89);
-}
-
-a:link, a:visited {
-    background-color: #002966;
-    color: white;
-    border: 2px solid rgb(1, 29, 119);
-    border-radius: 15px;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-}
-  
-a:hover, a:active {
-    background-color: #cc0000;
-    color: white;
-}
-
-span {
-    background-color: #002966;
-    color: white;
-    border: 2px solid rgb(1, 29, 119);
-    border-radius: 15px;
-    padding: 10px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    cursor: grab;
-}
-
-span:hover, span:active {
-    background-color: #cc0000;
-    color: white;
 }
