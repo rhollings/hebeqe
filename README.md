@@ -5,4 +5,3 @@ Screenshot of current webpage 😁
 
 https://rhollings.github.io/hebeqe/ 👈view here
 
-under maintenance ... 
